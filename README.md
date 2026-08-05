@@ -49,18 +49,3 @@ Then run:
 - Export cancellation occurs after the current raster block finishes.
 - HRDEM elevation heights are referenced to CGVD2013 according to NRCan collection metadata.
 
-## Version 1.0.1 fix
-
-- Fixed startup failure caused by the map attribution variable being initialized after the initial tile-server update.
-
-## Version 1.0.2 fix
-
-- Initializes the map-attribution variable before any UI construction.
-- Makes the tile-server callback safe even if Tk invokes it during partial startup.
-- The application window title includes its version so a stale local copy is easy to identify.
-
-## Version 1.0.3 fix
-
-- Reissued under a unique filename to prevent a browser-cached 1.0.0 download from masquerading as the fixed build.
-- Includes build marker `attribution-init-before-build-ui-2026-08-05`.
-- Verified that `attribution_var` is initialized before `_build_ui()` and that the file passes Python bytecode compilation.

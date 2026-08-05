@@ -1,6 +1,6 @@
 # CanElevation Terrain Exporter
 
-Version 1.0.3
+Version 1.0.7
 
 A Tkinter desktop tool for selecting a geographic bounding box on a map and exporting an accurate terrain GeoTIFF from Natural Resources Canada's CanElevation STAC collections.
 
